@@ -1,14 +1,15 @@
 const initialSate = 0;
 
-
 const changeTheNumber = (state = initialSate, action) => {
-    switch(action.type) {
-        case "INCREMENT" : return state + 1;
-        case "DECREMENT"  : return state -1;
+  switch (action.type) {
+    case "INCREMENT":
+      return state + 1;
+    case "DECREMENT":
+      return state - 1;
 
-        default : return state;
-    }
-}
+    default:
+      return state;
+  }
+};
 
-
-export default changeTheNumber
+export default changeTheNumber;
